@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: white;
+font-family: "Noto Sans Display", sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+}
+
+.container{
+margin: 30px 60px;
+display: flex;
+max-width: 1000px;
+
+
+}
+.card-one{
+   background-color:rgb(218, 132, 4);
+   color: white;
+   padding: 70px;
+ 
+  border-radius: 15px 0px 0px 15px;
+}
+.card-two{
+    background-color: rgb(13, 125, 122);
+    color: white;
+    padding: 70px;
+ 
+  
+}
+.card-three{
+    background:rgb(1, 67, 67);
+    color: white;
+    padding: 70px;
+
+   border-radius: 0px 15px 15px 0px;
+   
+}
+.card-one, .card-two, .card-three{
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+gap: 25px;
+}
+.card-one p, .card-two p , .card-three p{
+    text-align: justify;
+}
+.btn-1,.btn-2, .btn-3{
+
+   padding: 10px 20px;
+   border: none;
+   border-radius: 20px;
+   background-color: white;
+   max-width: 125px;
+
+
+}
+.btn-1{
+color: rgb(196, 126, 21);
+
+}
+.btn-2{
+    color: rgb(36, 79, 119);
+    }next
+    .btn-3{
+        color: rgb(9, 32, 32);
+        }
+
+
+
+
+      @media (max-width: 868px){
+    .container{
+        display: flex;
+        flex-direction:column;
+        max-width: 450px;
+    }
+    .card-one{
+        border-radius: 15px 15px 0px 0px;
+    }
+    .card-two{
+        border-radius:  0px 0px 0px;
+    }
+   
+    .card-three{
+       border-radius: 0px 0px 15px 15px; 
+    }
+
+}
